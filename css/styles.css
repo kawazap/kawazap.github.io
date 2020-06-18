@@ -1,0 +1,127 @@
+/*container*/
+.container{
+  letter-spacing: 2px;
+}
+/*center*/
+.center {
+  text-align: center;
+}
+/*subtaitle*/
+.subtitle{
+  color : navy;
+  font-size:200%;
+  line-height: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*bodystyle*/
+body{
+	position:relative;
+	padding:10px 10px 10px 100px;
+  min-height:10px;
+  width:  800px;
+  margin-left : auto;
+  margin-right: auto;
+  /*margin-top: 0px;*/
+  /*margin-inline-end: 0px;*/
+}
+/*About me*/
+.about_me{
+  position: relative;
+  background: #fff0cd;
+  box-shadow: 0px 0px 0px 5px #fff0cd;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: #454545;
+}
+.about_me:after{
+  position: absolute;
+  content: '';
+  right: -7px;
+  top: -7px;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+  border-color: #ffdb88 #fff #ffdb88;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.about_me p {
+  margin: 10; 
+  padding: 0;
+}
+
+.potato{
+	position:relative;
+	width:100%;
+max-width: 100%;
+height: 10%;
+	top:10%;
+  margin-top:-10px;
+}
+
+.introduce{
+  margin-left: 2px;
+}
+
+.intorduce{
+  margin-left: 2px;
+}
+
+/*activities*/
+.timeline {
+  list-style: none;
+}
+.timeline > li {
+  margin-bottom: 60px;
+}
+
+/* for Desktop */
+@media ( min-width : 640px ){
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+  .timeline-date {
+    width: 110px;
+    float: left;
+    margin-top: 20px;
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    border-left: 3px #e5e5d1 solid;
+    padding-left: 30px;
+  }
+  .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #6fc173;
+    position: absolute;
+    left: 106px;
+    top: 24px;
+    border-radius: 100%;
+  }
+}
+
+/*footer*/
+footer{
+  position:relative;
+  background-color: #efefef;
+  margin : 20px;
+  padding: 10px;
+}
+footer .line p {
+	color: #336666; /* 文字の色　#336666 */
+	font-size: 10px; /* 文字の大きさ　10px */
+	text-align: center; /* 文字の中央揃え */
+}
+footer .line a {
+	color: #336666; /* 文字の色　#336666 */
+	font-size: 12px; /* 文字の大きさ　10px */
+}
+footer .line {
+	background-color: #00CCCC; /* 背景の色　#00CCCC */
+	padding: 20px 0; /* 内側の余白　上下20px　左右0 */
+}
