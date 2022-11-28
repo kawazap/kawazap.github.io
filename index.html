@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" >
         <link rel="stylesheet" href= "css/styles.css">
+        <script src = "js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -28,8 +30,6 @@
                     <p> Kagoshima University  M1</p>
                 </div>
         </div>
-
-        <section>
             <div class = subtitle>Skill</div>
                 <table>
                       <tbody>
@@ -52,6 +52,45 @@
                     </tbody>
                 </table>
         </section>
+        <section>
+          <div class = subtitle>Products</div>
+          <div class="container_products">
+            <!--まず画像のリスト-->
+            <ul class="popup_list">
+              <li><a class="popup_open" data-target="popup_01" href=""><img src="./images/sakurajimahouse2022.png" alt=""></a></li>
+              <li><a class="popup_open" data-target="popup_02" href=""><img src="./images/AR_card.jpeg" alt=""></a></li>
+              <li><a class="popup_open" data-target="popup_03" href=""><img src="./images/Recipe_suggestions.png" alt=""></a></li>
+              <li><a class="popup_open" data-target="popup_04" href=""><img src="./images/Health_Chair.png" alt=""></a></li>
+            </ul>
+      
+            <!--ここからポップアップ表示させるコンテンツ-->
+            <div class="popup_content">
+              <div class="popup_box" id="popup_01">
+                <div class="tit">
+                  <span>さくらじまハウス2022</span>
+                </div>
+                <img src="./images/sakurajimahouse2022.png" alt="">
+                <p>鹿児島のエンジニア向けイベントのHPの制作にフロントの部分で関わりました。<a href = "https://www.sakurajima-house.tech/">さくらじまハウス2022HP</a></p>
+              </div><!--/.popup_box-->
+              <div class="popup_box" id="popup_02">
+                <div class="tit"><span>Popup02</span></div>
+                <img src="./images/AR_card.jpeg" alt="">
+                <p>QRコードにスマホをかざすと、ARで拡張した情報を表示します。<a href = "https://github.com/kawazap/ar-template">リポジトリ</a></p>
+              </div><!--/.popup_box-->
+              <div class="popup_box" id="popup_03">
+                <div class="tit"><span>Popup03</span></div>
+                <img src="./images/Recipe_suggestions.png" alt="">
+                <p>夕食で何を食べようか迷った時に、ランダムにご飯を提示してくれるサイトです。<a href = "https://github.com/CurryManjyuu/Recipe_suggestions">リポジトリ</a></p>
+              </div><!--/.popup_box-->
+              <div class="popup_box" id="popup_04">
+                  <div class="tit"><span>Popup03</span></div>
+                  <img src="./images/Health_Chair.png" alt="">
+                  <p>着席している時間を圧力センサで計測し、LINEBotでグラフ可視化したものを送信するものです。<a href = "https://github.com/jphacks/E_2102">リポジトリ</a></p>
+              </div><!--/.popup_box-->
+            </div><!--/.popup_content-->
+          </div>
+        <section>
+
         <section>
             <div class = "subtitle">Activities</div>
               <ul class="timeline">
@@ -104,8 +143,9 @@
                     <p>富士通データサイエンス部　インターン</p>
                     <p><a href="https://www.kyusec.jp/archive/2022">第2回九州サイバーセキュリティシンポジウム</a>講演</p>
                     <p><a href="http://www.3d-conf.org/">3次元画像コンファレンス 2022</a>発表("放物面鏡を利用した全方位立体像の再生"）</p>
+                    <p><a href="https://www.security-camp.or.jp/minicamp/yamanashi2022.html">セキュリティ・ミニキャンプ in 山梨 2022</a>チューター</p>
+                    <p><a href="https://uist.acm.org/uist2022/cfp.html#sic">UIST'22 Student innovation Contest</a> 選考通過(10/21件)、10/29-11/2 UIST2022（OR,Bend)でデモ展示</p>
                     <p><a href="https://sechack365.nict.go.jp/">SecHack365</a> 参加中</p>
-                    <p><a href="https://uist.acm.org/uist2022/cfp.html#sic">UIST'22 Student innovation Contest</a> 選考通過(10/21件)、10/29-11/2 UIST2022（OR,Bend)でデモ展示予定</p>
                   </div>
                 </li>
               </ul>
@@ -135,7 +175,7 @@
 
         <footer>
           <element class = "line"></element>
-          <div class= "center">Latest Update 2022/7/20 ©︎ Kawazap</div>
+          <div class= "center">Latest Update 2022/11/28 ©︎ Kawazap</div>
         </footer>
       </div>
     </body>
