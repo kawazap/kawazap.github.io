@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詳細ページ</title>
+    <!-- CSSファイルのリンクなど、必要なリソースをここに追加 -->
+</head>
+<body>
+    <!-- 詳細ページのコンテンツをここに配置 -->
+    <h1>詳細ページ</h1>
+    <p>詳細情報など...</p>
+    <button id="closeButton">✖</button>
+
+    <!-- JavaScriptファイルのリンクなど、必要なスクリプトをここに追加 -->
+</body>
+</html>
+<script>
+  // JavaScriptファイルを読み込む
+document.addEventListener("DOMContentLoaded", function () {
+    const image = document.getElementById("yourImageID"); // 画像のIDを指定して取得
+    const closeButton = document.getElementById("closeButton"); // ×ボタンのIDを指定して取得
+    const detailPage = document.getElementById("detailPage"); // 詳細ページのIDを指定して取得
+
+    // 画像をクリックしたときの処理
+    image.addEventListener("click", function () {
+        detailPage.style.display = "block"; // 詳細ページを表示
+    });
+
+    // ×ボタンをクリックしたときの処理
+    closeButton.addEventListener("click", function () {
+        detailPage.style.display = "none"; // 詳細ページを非表示
+    });
+});
+
+</script>

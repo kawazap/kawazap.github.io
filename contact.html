@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script src="https://static.spearly.com/js/cms.js" defer></script>
+  <script>window.addEventListener('DOMContentLoaded',()=>{const t=document.querySelectorAll(':not(:defined)');for(const e of t) {e.style.visibility="hidden";}; window.spearly.config.AUTH_KEY="ljYnscRdnPhA8aKZlJ0yhVJeLaOsDI-9is7FhEus4pw"},{once:true})</script>
+  </head>
+  <body>
+    <spearly-form data-form-id="f-l4I1nwmCpQ20KuifSHFP">
+
+    <h1 class="title">{%= form_title %}</h1>
+    <h2 class="subtitle">{%= form_description %}</h2>
+
+    <div class="field">
+        <div class="label">{%= form_label_name %}</div>
+
+        <div class="control">
+            {%= form_name %}
+        </div>
+
+        <p class="help">{%= form_description_name %}</p>
+    </div>
+
+    <div class="field">
+        <div class="label">{%= form_label_mail-address %}</div>
+
+        <div class="control">
+            {%= form_mail-address %}
+        </div>
+
+        <p class="help">{%= form_description_mail-address %}</p>
+    </div>
+
+    <div class="field">
+        <div class="label">{%= form_label_message %}</div>
+
+        <div class="control">
+            {%= form_message %}
+        </div>
+
+        <p class="help">{%= form_description_message %}</p>
+    </div>
+
+    <button class="submit" type="submit">Submit</button>
+    </spearly-form>
+  </body>

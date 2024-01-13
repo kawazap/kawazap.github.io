@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script src="https://static.spearly.com/js/cms.js" defer></script>
+    <script>window.addEventListener('DOMContentLoaded',()=>{const t=document.querySelectorAll(':not(:defined)');for(const e of t) {e.style.visibility="hidden";}; window.spearly.config.AUTH_KEY="ljYnscRdnPhA8aKZlJ0yhVJeLaOsDI-9is7FhEus4pw"},{once:true})</script>
+  </head>
+  <body>
+    <h2>国際学会</h2>
+    <ul>
+      <li cms-loop cms-content-type="publications-kawazap-portfolio">
+        <!-- タイトル -->
+        <h1>[{%= publications-kawazap-portfolio_number %}]{%= publications-kawazap-portfolio_title %}</h1>
+    
+        <!-- 概要 -->
+        <p>{%= publications-kawazap-portfolio_description %}</p>
+    
+        <!-- 引用 -->
+        <p>{%= publications-kawazap-portfolio_quate %}</p>
+    
+      </li>
+    </ul>
+    <h2>国内学会(査読あり)</h2>
+    <ul>
+      <li cms-loop cms-content-type="publications-domestic-peer-reviewed">
+        <!-- タイトル -->
+        <h1>[{%= publications-domestic-peer-reviewed_list %}]{%= publications-domestic-peer-reviewed_title %}</h1>
+    
+        <!-- 引用 -->
+        <div>{%= publications-domestic-peer-reviewed_quate %}</div>
+    
+      </li>
+    </ul>
+
+    <h2>国内学会(査読なし)</h2>
+    <ul>
+      <li cms-loop cms-content-type="publications-domestic-non-reviewed">
+        <!-- タイトル -->
+        <h1>[{%= publications-domestic-non-reviewed_list %}]{%= publications-domestic-non-reviewed_title %}</h1>
+    
+        <!-- 引用 -->
+        <div>{%= publications-domestic-non-reviewed_quate %}</div>
+    
+        <!-- 賞 -->
+        <div>{%= publications-domestic-non-reviewed_prize %}</div>
+
+    
+      </li>
+    </ul>
+  </body>
