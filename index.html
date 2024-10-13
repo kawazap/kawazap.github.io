@@ -1,201 +1,57 @@
 <!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <meta charset="utf-8">
-        <title>Kawazap's  portfolio</title>
-        <link rel="icon" href="favicon.ico">
-        <meta name="description" content="Kawazapのポトフォーリオサイトです">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" >
-        <link rel="stylesheet" href= "css/styles.css">
-        <script src = "js/index.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-
-    <body>
-        <div id="main" role="main" class="container"></div>
-          <header>
-                <div class= "center">
-                    <h1>Kawazapのポートフォリオサイト</h1>
-                </div>
-          </header>
-
-        <div class="about_me">
-            <div class = "subtitle">About me </div>
-                <div class="potato">
-                    <img src = "images/satumaimo.png" alt = "Kawazapの分身です"width="100" height="100" align="left" >
-                </div>
-                <div class="introduce">
-                    <p> Nickname Kawazap</p>
-                    <p> Kagoshima University  D1</p>
-                </div>
-        </div>
-            <div class = subtitle>Skill</div>
-                <table>
-                      <tbody>
-                          <tr>
-                              <th style="text-align: left">C</th>
-                              <th style="text-align: right">★★★☆☆</th>
-                          </tr>
-                          <tr>
-                              <td style="text-align: left">Java</td>
-                              <td style="text-align: right">★☆☆☆☆</td>
-                          </tr>
-                          <tr>
-                              <td style="text-align: left">Python </td>
-                              <td style="text-align: right">★★★☆☆</td>
-                          </tr>
-                          <tr>
-                            <td style="text-align: left">GAS </td>
-                            <td style="text-align: right">★★☆☆☆</td>
-                        </tr>
-                    </tbody>
-                </table>
-        </section>
-        <section>
-          <div class = subtitle>Products</div>
-          <div class="container_products">
-            <!--まず画像のリスト-->
-            <ul class="popup_list">
-              <li><a class="popup_open" data-target="popup_01" href=""><img src="./images/sakurajimahouse2022.png" alt=""></a></li>
-              <li><a class="popup_open" data-target="popup_02" href=""><img src="./images/AR_card.jpeg" alt=""></a></li>
-              <li><a class="popup_open" data-target="popup_03" href=""><img src="./images/Recipe_suggestions.png" alt=""></a></li>
-              <li><a class="popup_open" data-target="popup_04" href=""><img src="./images/Health_Chair.png" alt=""></a></li>
-            </ul>
-      
-            <!--ここからポップアップ表示させるコンテンツ-->
-            <div class="popup_content">
-              <div class="popup_box" id="popup_01">
-                <div class="tit">
-                  <span>さくらじまハウス2022</span>
-                </div>
-                <img src="./images/sakurajimahouse2022.png" alt="">
-                <p>鹿児島のエンジニア向けイベントのHPの制作にフロントの部分で関わりました。<a href = "https://www.sakurajima-house.tech/">さくらじまハウス2022HP</a></p>
-              </div><!--/.popup_box-->
-              <div class="popup_box" id="popup_02">
-                <div class="tit"><span>Popup02</span></div>
-                <img src="./images/AR_card.jpeg" alt="">
-                <p>QRコードにスマホをかざすと、ARで拡張した情報を表示します。<a href = "https://github.com/kawazap/ar-template">リポジトリ</a></p>
-              </div><!--/.popup_box-->
-              <div class="popup_box" id="popup_03">
-                <div class="tit"><span>Popup03</span></div>
-                <img src="./images/Recipe_suggestions.png" alt="">
-                <p>夕食で何を食べようか迷った時に、ランダムにご飯を提示してくれるサイトです。<a href = "https://github.com/CurryManjyuu/Recipe_suggestions">リポジトリ</a></p>
-              </div><!--/.popup_box-->
-              <div class="popup_box" id="popup_04">
-                  <div class="tit"><span>Popup03</span></div>
-                  <img src="./images/Health_Chair.png" alt="">
-                  <p>着席している時間を圧力センサで計測し、LINEBotでグラフ可視化したものを送信するものです。<a href = "https://github.com/jphacks/E_2102">リポジトリ</a></p>
-              </div><!--/.popup_box-->
-            </div><!--/.popup_content-->
-          </div>
-        <section>
-
-        <section>
-            <div class = "subtitle">Activities</div>
-              <ul class="timeline">
-                <li>
-                  <p class="timeline-date">2018年</p>
-                  <div class="timeline-content">
-                    <p>進取の精神チャレンジプログラム 優秀賞</p>
-                    <p>九州夏ロボコン参加</p>
-                    <p>課題解決型インターンシップ(三島村役場) 参加</p>
-                  </div>
-                </li>
-                <li>
-                  <p class="timeline-date">2019年 </p>
-                  <div class="timeline-content">
-                    <p>進取の精神チャレンジプログラム 優秀賞</p>
-                    <p>九州夏ロボコン アイデア賞</p>
-                    <p>セキュリティ・ミニキャンプ in 福岡 2019 参加</p>
-                    <p>NHK学生ロボコン2020 プログラム班リーダー</p>
-                    <p>SECCON Beginners 2019 福岡 参加</p>
-                  </div>
-                </li>
-                <li>
-                  <p class="timeline-date">2020年</p>
-                  <div class="timeline-content">
-                    <p>Open Hack U 2020 ONLINE vol.3 参加</p>
-                    <p>JPHACKS 2020 E(九州・沖縄・四国)ブロック 2位 (チームE2007)</p>
-                    <p>セキュリティ・キャンプ全国大会2020 オンライン Dトラック修了</p>
-                  </div>
-                </li>
-                <li>
-                  <p class="timeline-date">2021年</p>
-                  <div class="timeline-content">
-                    <p>第3回  KLab Expert Camp 修了</p>
-                    <p>スプリングセミナー2021: Deep Learning for NLP講座 修了</p>
-                    <p>　　　　”　　　　　　 : 深層生成モデル 修了</p>
-                    <p>　　　　”　　　　　　 : 深層強化学習 修了</p>
-                    <p>株式会社サポーターズ主催 第3回技育CAMPハッカソン 努力賞 (チームカレー饅頭)</p>
-                    <p>セキュリティ・ネクストキャンプ全国大会2021 オンライン 修了</p>
-                    <p>JPHACKS 2021 E(九州・沖縄・四国)ブロック 2位<a href="https://github.com/jphacks/E_2102">(E_2102, AMUSTAS)</a></p>
-                    <p>情報処理学会九州支部奨励賞("放物面鏡対を利用した全方位立体像の再生", 第74回電気・情報関係学会九州支部連合大会,2021)</p>
-                    <p>SIGGRAPH Asia 2021 TOKYO student volunteer </p>
-                  </div>
-                </li>
-                <li>
-                  <p class="timeline-date">2022年</p>
-                  <div class="timeline-content">
-                    <a href="https://infarmation.org/cat-event/3376/">第2回鹿児島ICTel大賞2021 アイデア部門最優秀賞(AED in Kagoshisma)</a>
-                    <p>令和3年度  卒業論文発表会 優秀発表賞</p>
-                    <p>進取の精神チャレンジプログラム 最優秀賞</p>
-                    <p>富士通データサイエンス部　インターン</p>
-                    <p><a href="https://www.kyusec.jp/archive/2022">第2回九州サイバーセキュリティシンポジウム</a>講演</p>
-                    <p><a href="http://www.3d-conf.org/">3次元画像コンファレンス 2022</a>発表("放物面鏡を利用した全方位立体像の再生"）</p>
-                    <p><a href="https://www.security-camp.or.jp/minicamp/yamanashi2022.html">セキュリティ・ミニキャンプ in 山梨 2022</a>チューター</p>
-                    <p><a href="https://uist.acm.org/uist2022/cfp.html#sic">UIST'22 Student innovation Contest</a> 選考通過(10/21件)、10/29-11/2 UIST2022（OR,Bend)でデモ展示</p>
-                  </div>
-                </li>
-                <li>
-                  <p class="timeline-date">2023年</p>
-                  <div class="timeline-content">
-                    <p><a href="https://sechack365.nict.go.jp/">SecHack365</a> 修了</p>
-                    <p><a href="https://smelltastetemperature.com/">Smell, Taste, and Temperature Interfaces Workshop at CHI 2023</a>accepted(<a href="https://smelltastetemperature.com/stt23_papers/ws15.pdf">paper</a>)</p>
-                    <p>Maker Faire Kyoto 2023  出展(<a href="https://makezine.jp/event/makers-mfk2023/m0086/">サイバー攻撃物理的可視化マップ, さつまラボ</a>)</p>
-                    <p>Maker Faire Tokyo 2023  出展(<a href="https://makezine.jp/event/makers-mft2023/m0209/">粒で作るフードプリンティングプロジェクト, さつまラボ</a>)</p>
-                    <p>サマースクール2023: 大規模言語モデル 修了</p>
-                    <p><a href="https://www.security-camp.or.jp/minicamp/ishikawa2023.html">セキュリティ・ミニキャンプ in 石川 2023</a>チューター</p>
-                    <p><a href="https://tsukuctf.org/ctf/TsukuCTF2023">Tsuku CTF 2023</a>作問</p>
-                  </div>
-                </li>
-                <li>
-                  <p class="timeline-date">2024年</p>
-                  <div class="timeline-content">
-                    <p><a href="https://core.scramble-robot.org/">CoRE:1(The Championship of Robotics Engineers)</a> 出場, チーム薩摩</p>
-                  </div>
-                </li>
-              </ul>
-            </section>
-      
-            <section>
-              <div class = "subtitle">Interests</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://static.spearly.com/js/cms.js" defer></script>
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+            const t=document.querySelectorAll(':not(:defined)');
+            for(const e of t) {e.style.visibility="hidden";}
+            window.spearly.config.AUTH_KEY="ljYnscRdnPhA8aKZlJ0yhVJeLaOsDI-9is7FhEus4pw"
+        },{once:true})
+    </script>
+    <title>kawazap</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html">Hiroki Kawahara | 川原 弘暉</a></h1>
+            <nav>
                 <ul>
-                    <li>ラーメン:新しい店を開拓する派です</li>
-                    <li>電子工作:kicadを使って回路基板も作成します</li>
-                    <li>釣り:堤防からの簡単な釣りが好きです</li>
-                    <li>旅行:いつか旅行した際の写真も掲載したいです</li>
+                    <li><a href="index.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="publication.html">Publication</a></li>
+                    <li><a href="CV/20240915_KawaharaHiroki_CV.pdf">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-          </section>
-          
-          </section>
-            <section>
-              <div class = "subtitle">Links</div>
-              <div class="center">
-                <a href="https://mobile.twitter.com/mikan45593608"  i class="fab fa-twitter fa-fw  fa-2x fa-border  faa-shake animated-hover"></a>
-                <a href="https://www.facebook.com/KagoshimaHiroki" i class="fab fa-facebook fa-fw fa-2x fa-border  faa-shake animated-hover" ></a>
-                <a href="https://github.com/kawazap"  i class="fab fa-github fa-fw  fa-2x fa-border  faa-shake animated-hover"></a>
-              </div>
+            </nav>
+        </header>
+        <main>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <div cms-loop cms-content-type="work-abstract" class="portfolio-item">
+                    <img src="{%= work-abstract_image %}" alt="{%= work-abstract_title %}"/>
+                    <h2>{%= work-abstract_title %}</h2>
+                    <p class="hidden">{%= work-abstract_description %}</p>
+                    <div class="hidden">{%= work-abstract_detail-description %}</div>
+                </div>
+            </div>
+        </main>
 
-            </section>
-      </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <img id="modalImage" src="" alt="">
+                <div class="modal-body">
+                    <p id="modalDescription"></p>
+                    <div id="modalDetailDescription"></div>
+                    <ul id="modalList"></ul>
+                </div>
+            </div>
+        </div>
 
-        <footer>
-          <element class = "line"></element>
-          <div class= "center">Latest Update 2024/4/17 ©︎ Kawazap</div>
-        </footer>
-      </div>
-    </body>
-
+    <script src="./js/script.js"></script>
+</body>
 </html>
-
