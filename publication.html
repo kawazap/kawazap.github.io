@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://static.spearly.com/js/cms.js" defer></script>
+    <script>window.addEventListener('DOMContentLoaded',()=>{const t=document.querySelectorAll(':not(:defined)');for(const e of t) {e.style.visibility="hidden";}; window.spearly.config.AUTH_KEY="ljYnscRdnPhA8aKZlJ0yhVJeLaOsDI-9is7FhEus4pw"},{once:true})</script>
+    <title>Hiroki Kawahara | 川原 弘暉</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="index.html">Hiroki Kawahara | 川原 弘暉</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="publication.html" class="active">Publication</a></li>
+                    <li><a href="CV/20240915_KawaharaHiroki_CV.pdf">CV</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="divider"></div>
+        <main>
+            <section id="publications">
+                <h2>Publications</h2>
+                <div class="publications-list">
+                    <h3>International Conference (peer-reviewed) </h3>
+                    <ul cms-loop cms-content-type="publications-kawazap-portfolio">
+                            <p class="publication-quote">{%= publications-kawazap-portfolio_quate %}</p>
+                    </ul>
+
+                    <h3>Domestic Conferences (peer-reviewed) </h3>
+                    <ul cms-loop cms-content-type="publications-domestic-peer-reviewed">
+                        <div>{%= publications-domestic-peer-reviewed_quate %}</div>
+                    </ul>
+
+                    <h3>Domestic Conferences (no reviewed) </h3>
+                    <ul cms-loop cms-content-type="publications-domestic-non-reviewed">
+                            <div>{%= publications-domestic-non-reviewed_quate %} </div>
+                    </ul>
+                    
+                    <h3>Award</h3>
+                    <ul cms-loop cms-content-type="award">
+                        <div>{%= award_title %}</div>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="#top">Back to Top</a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>
+    <p>© Hiroki Kawahara. All rights reserved.</p>
+</footer>
+</html>
